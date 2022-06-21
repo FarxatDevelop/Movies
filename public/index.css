@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Merienda:wght@400;700&family=Open+Sans:wght@300;400;500;600;700;800&family=Pacifico&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+  font-family: "Poppins", sans-serif;
+}
+body::-webkit-scrollbar {
+  width: 0;
+}
+.clock {
+  background-color: rgb(238, 255, 0);
+  width: 250px;
+  height: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  font-family: sans-serif;
+  border-radius: 5px;
+}
+.loader {
+  min-height: 100vh;
+  background-color: black;
+  color: rgb(255, 0, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loader h1 {
+  font-size: 32px;
+  letter-spacing: 2px;
+}
+header {
+  height: 10vh;
+  background-color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+.cards {
+  width: 85%;
+  margin: 0 auto;
+  display: grid;
+  height: 80vh;
+  overflow-y: scroll;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  margin-top: 50px;
+}
+.cards::-webkit-scrollbar {
+  width: 8px;
+  border-radius: 8px;
+  background: rgb(221,31,31);
+  background: linear-gradient(242deg, rgba(221,31,31,1) 0%, rgba(35,9,83,1) 23%, rgba(136,10,181,1) 70%, rgba(14,11,244,1) 100%);
+}
+.cards::-webkit-scrollbar-thumb  {
+  background-color: rgb(234, 255, 4);
+  border-radius: 8px;
+}
+.card {
+  height: 330px;
+}
+.card p {
+  color: red;
+}
+.card .name {
+  color: aliceblue;
+}
+.card img {
+  width: 100%;
+  height: calc(100% - 50px);
+  border-radius: 8px;
+}
+a {
+  text-decoration: none;
+  color: aliceblue;
+}
